@@ -17,4 +17,8 @@ router.get('/publications', (req, res) => {
     res.render('publications');
 })
 
+router.get('/resources', (req, res) => {
+    res.render('resources');
+})
+
 module.exports=router;

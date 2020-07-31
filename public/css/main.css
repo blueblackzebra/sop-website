@@ -1,3 +1,4 @@
+ 
 
 h1 {
     font-family: 'Lucida Console', Monaco, monospace;
@@ -7,35 +8,58 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 100%;
+    width: 100%;
     margin: 0;
-    float: left;
     background-color: #c5aa6a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #logo {
     display: block;
-    width: 85%;
+    width: 75%;
+    /* height: 9vh; */
     margin: auto;
 }
 
 header {
     height: 20%;
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 
-html, body {
+html{
     margin: 0;
+    padding: 0;
+    /* border: 3px; */
+    box-sizing: border-box;
+    /* position: fixed; */
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom:0; */
     height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 3px; 
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+
+    /* flex-direction: row; */
+    /* align-items: center; */
 }
 
 #page-title {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 70%;
+    /* align-items: center; */
+    width: 100%;
     height: 100%;
     text-align: center;
     float: left;
@@ -43,28 +67,60 @@ html, body {
 }
 
 #title-text {
-    font-size: 5vmin;
+    font-size: 4vmin;
     color: #17252A;
+    padding: 0.8vh;
 }
 
-#filler-space {
+/* #filler-space {
     width: 15%;
     height: 100%;
     margin: 0;
     float: left;
     background-color: #c5aa6a;
+} */
+
+main {
+    width: 75%;
+    /* height: 100%; */
+    min-height: 100vh;
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: 0;
+    align-items: center;
+    position: relative;
+    left: 12.5%;
+    z-index: 1;
 }
 
 nav {
     background-color: #c5aa6a;
+    width: 12.5%;
+    height:100%;
     float: left;
-    width: 15%;
+    position: fixed;
+    /* top: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
 }
 
 .nav-link {
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,19 +132,46 @@ nav {
     color: #25274D;
 }
 
-aside {
+#nav-button {
+    display: none;
+    background-color: #c5aa6a;
+    border: 0;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+#arrow-button {
+    display: none;
+    background-color: #c5aa6a;
+    border: 0;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;    /* height:100%; */
+
+}
+
+/* .fa-bars {
+    width: 30px;
+    height: 30px;
+} */
+
+
+/* aside {
     background-color: #c5aa6a;
     float: left;
     width: 15%;
     height: 100%;
-}
+} */
 
 section {
-    float:left;
-    width: 70%;
+    width: 100%;
     height: 100%;
     text-align: center;
     background-color: #FFF5D7;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 a:link {
@@ -99,6 +182,74 @@ a:visited {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1200px) {
+    nav {
+        width: 17.5%;
+    }
 
+    main {
+        width: 82.5%;
+        left: 17.5%;
+    }
+}
 
+@media only screen and (max-width: 700px) {
+    
+    #logo-div {
+        display: none;
+    }
+
+    nav {
+        width: 10%;
+        transition: width 200ms ease;
+    }
+
+    #nav-button {
+        margin-top: 10px;
+        display: block;
+    }
+
+    main {
+        width: 90%;
+        left: 10%;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .nav-text {
+        font-size: 14px;
+    }
+
+    #title-text {
+        font-size: 32px;
+    }
+
+    section {
+        padding-top: 5px;
+    }
+}
+
+/* @media only screen and (min-width: 600px) {
+
+} */
+
+#core-faculty {
+    display:flex;
+    width: 100%;
+    height:20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.core-faculty-items {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.profile-pic {
+    width: 10%;
+}
 
