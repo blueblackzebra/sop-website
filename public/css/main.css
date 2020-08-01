@@ -25,7 +25,7 @@ h1 {
 }
 
 header {
-    height: 15%;
+    /* height: 15%; */
     width: 100%;
     margin: 0;
 }
@@ -225,6 +225,8 @@ a:visited {
     #title-text {
         font-size: 32px;
     }
+
+
 
     section {
         padding-top: 5px;
