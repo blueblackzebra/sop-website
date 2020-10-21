@@ -10,7 +10,7 @@ h1 {
     align-items: center;
     width: 100%;
     margin: 0;
-    background-color: #c5aa6a;
+    background-color: #f4f0db;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 0;
@@ -50,6 +50,8 @@ body {
     box-sizing: border-box;
     min-height: 100vh;
     display: flex;
+    /* background-image: url(../img/circuit.png); */
+    background-color: #ecd9ba;
 
     /* flex-direction: row; */
     /* align-items: center; */
@@ -63,7 +65,7 @@ body {
     height: 100%;
     text-align: center;
     float: left;
-    background-color: #FFF5D7;
+    background-color: #ecd9ba;
 }
 
 #title-text {
@@ -96,7 +98,7 @@ main {
 }
 
 nav {
-    background-color: #c5aa6a;
+    background-color: #f4f0db;
     width: 12.5%;
     height:100%;
     float: left;
@@ -106,6 +108,7 @@ nav {
     flex-direction: column;
     align-items: center;
     z-index: 2;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
 .navbar-list {
@@ -141,6 +144,17 @@ nav {
     height: 35px;
 }
 
+#aside {
+    left:95%;
+    width: 12.5%;
+    background-color: #f4f0db;
+    height: 100vh;
+    
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
 #arrow-button {
     display: none;
     background-color: #c5aa6a;
@@ -169,7 +183,7 @@ section {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #FFF5D7;
+    background-color: #ecd9ba;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -190,6 +204,10 @@ a:visited {
     main {
         width: 82.5%;
         left: 17.5%;
+    }
+
+    #aside {
+        display: none;
     }
 }
 
@@ -230,6 +248,10 @@ a:visited {
 
     section {
         padding-top: 5px;
+    }
+
+    #aside {
+        display: none;
     }
 }
 
@@ -303,14 +325,16 @@ a:visited {
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    background-color:seagreen;
+    background-color:white;
     padding: 5px;
     border-width: 10px;
     margin: 30px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
 .publication-text {
     margin: 5px;
+    color: black;
 }
 
 .pub-link {
@@ -320,3 +344,4 @@ a:visited {
 .pub-link:hover {
     text-decoration: underline;
 }
+
