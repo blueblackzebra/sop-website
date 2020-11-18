@@ -137,7 +137,7 @@ nav {
 
 #nav-button {
     display: none;
-    background-color: #c5aa6a;
+    background-color: #f4f0db;
     border: 0;
     align-items: center;
     width: 35px;
@@ -157,7 +157,7 @@ nav {
 
 #arrow-button {
     display: none;
-    background-color: #c5aa6a;
+    background-color: #f4f0db;
     border: 0;
     align-items: center;
     width: 35px;
@@ -345,3 +345,30 @@ a:visited {
     text-decoration: underline;
 }
 
+.research-box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    /* width: 33.3%; */
+    padding: 5px;
+    border-width: 10px;
+    margin: 30px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.research-text {
+    margin: 5px;
+    color: black;
+}
+
+.res-link {
+    color: black;
+}
+
+.res-link:hover {
+    text-decoration: underline;
+}
